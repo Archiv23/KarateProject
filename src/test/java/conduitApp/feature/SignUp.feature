@@ -38,7 +38,7 @@ Feature: Sign up of a new user
                 }
             }
         """
-    @debug
+    @parallel=false
     Scenario Outline: Validate Sign up for error messages
         * def randomEmail = dataGenerator.getRandomEmail()
         * def randomUsername = dataGenerator.getRandomUsername()

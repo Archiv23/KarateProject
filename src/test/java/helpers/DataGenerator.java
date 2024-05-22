@@ -15,4 +15,11 @@ public class DataGenerator {
         String username = faker.name().username();
         return username;
     }
+
+    public static String getRandomCommentString(){
+        Faker faker = new Faker();
+        String commenttexString = "test comment"+faker.random().nextInt(0, 100);
+        return commenttexString;
+    }
+
 }

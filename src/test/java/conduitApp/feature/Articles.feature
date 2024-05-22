@@ -1,7 +1,7 @@
-@ignore
+@parallel=false
 Feature: Test the Articles functionality 
 
-    Background: Define URL and user token
+    Background: Define URL 
         Given url apiURL
 
 

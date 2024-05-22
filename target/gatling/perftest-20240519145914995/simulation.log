@@ -1,0 +1,6 @@
+RUN	performance.PerfTest	perftest	1716130754995	 	3.9.5
+USER	create and delete article	START	1716130757908
+REQUEST		POST /api/users/login	1716130763798	1716130764610	OK	 
+REQUEST		POST /api/articles	1716130764691	1716130765189	OK	 
+REQUEST		DELETE /api/articles/Karate-Class-7-4024	1716130765205	1716130765689	OK	 
+USER	create and delete article	END	1716130765702

@@ -1,9 +1,7 @@
-@parallel=false
 Feature: Test the Articles functionality 
 
     Background: Define URL 
         Given url apiURL
-
 
 
     Scenario: Create new article   
@@ -14,22 +12,10 @@ Feature: Test the Articles functionality
         And response.article.title == "Karate Class 7"
         * def articleID = response.article.slug
 
-        Given params {limit: 10, offset: 0 }
-        And path 'articles'
-        When method GET
-        Then status 200
-        And match response.articles[0].title == "Karate Class 7"
-
-
         Given path 'articles/'+articleID
         When method DELETE
         Then status 204
 
-        Given params {limit: 10, offset: 0 }
-        And path 'articles'
-        When method GET
-        Then status 200
-        And match response.articles[0].title != "Karate Class 7"
 
 
 

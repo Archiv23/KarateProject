@@ -10,7 +10,7 @@ function fn() {
   }
   
   if (env == 'dev') {
-    config.userEmail = 'monikageller@yopmail.com'
+    config.userEmail = 'karateA1@test.com'
     config.userPassword = 'Test@123'
   } 
    if (env == 'qa') {
